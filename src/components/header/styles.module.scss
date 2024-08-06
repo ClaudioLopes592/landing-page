@@ -1,0 +1,163 @@
+
+
+.header {
+    width: 100%;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+.headerIcons {
+    display: flex;
+    gap: 14px;
+}
+
+.icons  {
+    color: #fff;
+    font-size: 28px;
+}
+
+.icons:hover {
+    color: #d34040;
+    animation: translateY 0.8s infinite alternate;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    color: #fff;
+    
+    img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.headerButton {
+    border: 1px solid #fff;
+    padding: 8px 24px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: transparent;
+    transition: background-color 0.8s;
+}
+
+.headerButton:hover {
+    border: 1px solid #d34040;
+    background-color: #d34040;
+}
+
+.hero {
+    color: #fff;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1 {
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 38px;
+    }
+
+    p {
+        text-align: center;
+        margin: 0 14px;
+    }
+}
+
+.buttonContact {
+    text-decoration: none;
+    padding: 14px 28px;
+    color: #fff;
+    background-color: #d34040;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+    border-radius: 4px;
+}
+
+.buttonContact:hover {
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.07);
+    }
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headerContent {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .headerIcons {
+        margin-top: 16px;
+        font-size: 34px;
+    }
+
+    .headerLogo {
+        width: 160px;
+        margin-top: 46px;
+    }
+
+    .headerButton {
+        display: none;
+    }
+
+    .hero {
+        min-height: 60vh;
+
+        h1 {
+            font-size: 28px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        h1 {
+            font-size: 18px;
+        }
+    }
+
+    .buttonContact {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+
+
+}

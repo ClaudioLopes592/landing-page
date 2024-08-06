@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 54px 8px;
+    gap: 16px;
+    color: #fff;
+
+    p{
+        text-align: center;
+    }
+}
+
+.footerIcons {
+    display: flex;
+    gap: 16px;
+}
+
+.icons {
+    color: #fff;
+    font-size: 28px;
+}
+
+.logoFooter {
+    img {
+        width: auto;
+        height: auto;
+    }
+}
